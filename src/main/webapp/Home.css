@@ -1,0 +1,130 @@
+@charset "ISO-8859-1";
+@import url(//fonts.googleapis.com/css?family=Abril+Fatface|Droid+Serif:400,700,400italic,700italic);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+ .container {
+  margin: 60px 60px;
+  padding: 0 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  margin:20px;
+  width:350px;
+  height:250px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
+  padding-bottom:0px;
+  position:relative;
+  background-color: rgba(14, 13, 13, 0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 1rem;
+}
+
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: #fff;
+  color: #333;
+  height: 60px;
+  padding: 0 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header a {
+  color: #333;
+  margin-right: 20px;
+}
+
+.header a:hover {
+  color: #000;
+}
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.logo {
+  color: red;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.logo a {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .header ul {
+    margin: 20px 0;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header a {
+    margin-right: 0;
+  }
+
+  .logo {
+    margin: 20px 0;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: steelblue;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.8;
+  color:white;
+}
+body {
+	  background:#2d3b36 url(http://andstud.io/wp-content/uploads/2014/03/blurrrr2.jpg)no-repeat center center fixed;
+  	-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+    padding-top: 0px;
+}
+p {
+  font-size: 20px;
+  
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+
+.intro{
+	font-size:15px;
+	right:5px;
+	position:absolute;
+	bottom:5px;
+}

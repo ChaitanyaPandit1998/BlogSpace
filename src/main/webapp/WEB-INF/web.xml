@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+	
+	<display-name>BlogSpace</display-name>
+	 <welcome-file-list>  
+	 <welcome-file>register.html</welcome-file>  
+	</welcome-file-list> 
+  
+	<servlet>
+	<servlet-name>UserRegister</servlet-name>
+	<servlet-class>com.blogspace.UserRegisterServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>UserRegister</servlet-name>
+	<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>UserLogin</servlet-name>
+	<servlet-class>com.blogspace.UserLoginServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>UserLogin</servlet-name>
+	<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>Home</servlet-name>
+	<servlet-class>com.blogspace.BlogServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>Home</servlet-name>
+	<url-pattern>/home</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>PostBlog</servlet-name>
+	<servlet-class>com.blogspace.BlogServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>PostBlog</servlet-name>
+	<url-pattern>/addblog</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+	<servlet-name>Logout</servlet-name>
+	<servlet-class>com.blogspace.UserLogoutServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>Logout</servlet-name>
+	<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+</web-app>
