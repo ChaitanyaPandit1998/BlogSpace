@@ -1,4 +1,4 @@
 # BlogSpace
 
 
-### This is simple blog application made using Java Servlets
+### This is a simple blog application made using Java Servlets
